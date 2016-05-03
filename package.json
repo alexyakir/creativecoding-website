@@ -1,0 +1,24 @@
+{
+  "name": "creativecoding-website",
+  "version": "1.0.0",
+  "description": "creativecoding website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Alex Yakir & Oleg Milshtein",
+  "license": "MIT",
+  "devDependencies": {
+    "autoprefixer": "*",
+    "browser-sync": "*",
+    "gulp": "*",
+    "gulp-imagemin": "*",
+    "gulp-postcss": "*",
+    "gulp-pug": "*",
+    "gulp-sass": "*",
+    "lost": "*",
+    "postcss-normalize": "*",
+    "precss": "*",
+    "pug": "*"
+  }
+}
