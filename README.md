@@ -10,4 +10,4 @@ $ npm install --save-dev
 
 ## License
 
-MIT © [Alex Yakir](http://alexyakir.com/)&[Oleg Milshtein](https://dribbble.com/olegmilshtein)
+MIT © [Alex Yakir](http://alexyakir.com/) & [Oleg Milshtein](https://dribbble.com/olegmilshtein)
