@@ -1,6 +1,6 @@
-# creativecoding-website 
+# my-website-starter-kit 
 
-> creativecoding website dev repo.
+> A simple starter kit that with the following dependencies: gulp, pug, postcss, browser-sync, imagemin & lost-grid.
 
 ## Install
 
@@ -10,4 +10,4 @@ $ npm install --save-dev
 
 ## License
 
-MIT © [Alex Yakir](http://alexyakir.com/) & [Oleg Milshtein](https://dribbble.com/olegmilshtein)
+MIT © [Alex Yakir](http://alexyakir.com/)

@@ -1,24 +1,26 @@
 {
-  "name": "creativecoding-website",
+  "name": "my-website-starter-kit",
   "version": "1.0.0",
-  "description": "creativecoding website",
+  "description": "A starter kit that includes: gulp, pug, postcss, browser-sync & lost-grid.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Alex Yakir & Oleg Milshtein",
+  "author": "",
   "license": "MIT",
   "devDependencies": {
     "autoprefixer": "*",
     "browser-sync": "*",
     "gulp": "*",
     "gulp-imagemin": "*",
+    "gulp-concat": "*",
     "gulp-postcss": "*",
     "gulp-pug": "*",
     "gulp-sass": "*",
     "lost": "*",
     "postcss-normalize": "*",
     "precss": "*",
-    "pug": "*"
+    "pug": "*",
+    "gulp-uglify": "*"
   }
 }
