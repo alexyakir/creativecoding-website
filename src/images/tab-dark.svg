@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="200px" height="40px" viewBox="0 0 200 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.7.2 (28276) - http://www.bohemiancoding.com/sketch -->
+    <title> </title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M31,50 L41,50 C46.5228475,50 53.0000128,45.9999745 55.4759382,41.0481236 L66.5240618,18.9518764 C68.9960542,14.0078916 75.4798439,10 80.9982458,10 L201.001754,10 C206.523633,10 213.000013,14.0000255 215.475938,18.9518764 L226.524062,41.0481236 C228.996054,45.9921084 235.475938,50 241,50 L251,50 L251,70 L31,70 L31,50 Z" id="path-1"></path>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.187075408 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-HD" transform="translate(-40.000000, -10.000000)">
+            <g id="tab-dark">
+                <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                <use fill="#26292C" fill-rule="evenodd" xlink:href="#path-1"></use>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,11 +1,94 @@
-extends layouts/base.pug
-
-block header
-  p This is #{example.headerText}
-block content
-  p This is #{example.contentText}
-block footer
-  p This is #{example.footerText}
-  
-
-
+doctype html
+html
+  head
+    title Creative Coding
+    meta(charset='utf-8')
+    meta(http-equiv='x-ua-compatible', content='ie=edge')
+    meta(name='description', content='')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    link(rel='apple-touch-icon', href='apple-touch-icon.png')
+    link(href='css/style.css', rel='stylesheet')
+  body(dir='rtl')
+    header
+      nav.main-navigation(dir='ltr')
+        ul
+          li.tab.active
+            a קורסים
+          li.tab
+            a מי אנחנו
+          li.tab
+            a מי אנחנו
+    div.wrapper
+      div.logo-container
+        div.logo
+        ol
+          - for (var x = 0; x < 200; x++)
+            li 
+      div.courses-header-container
+        aside.class-metadata
+          ul
+            li.date
+              h2 הקורס הבא
+              h3 01.06.2016
+            li.price
+              h2 מחיר
+              h3 5000 ₪ (כולל מע״מ)
+            li 20 מפגשים וירטואלים
+            li 17:00 - 19:00, בימי ראשון
+            li תמיכה כל השבוע דרך סלאק
+          a(href='#').btn.submit הרשמה
+        hgroup.course-header-text(dir='ltr')
+          h1 Html + Css course for designers
+          h4 for designers!
+      div.benefits-container
+        div.benefit
+          h2 לגשר על הפער בין עיצוב ופיתוח
+          p הפער בין עיצוב לפיתוח היא סוגייה מוכרת ומורכבת בעולם התוכנה. מעצב אשר יודע לגשר על פער זה, הוא בעל ערך רב. בואו לשדרג את הכישורים שלכם בקורס ענייני ומתומצת שבנוי במיוחד למעצבים שרוצים לקחת את הצעד המקצועי הבא שלהם.
+        div.benefit
+          h2 ללמוד אונליין בזמן אמת
+          p הקורס מועבר ביום ובשעה קבועים בשבוע ומועבר במתכונת ״וובינר״ - לימוד אונליין בזמן אמת. אתם מקבלים את כל היתרונות של קורס פיזי (שואלים שאלות, מקבלים תמיכה ונשארים מחויבים) בלי החסרונות (לבזבז זמן וכוח בשביל להגיע לשיעור ולחזור מאוחר הביתה).
+        div.benefit
+          h2 לקבל תמיכה בכל זמן
+          p אנחנו מאמינים שהדרך הנכונה והפרודוקטיבית ביותר ללמוד היא באמצעות תרגול. אנחנו נדאג לבסס את הבטחון העצמי שלכם בקוד על ידי מתן מענה מהיר ויעיל דרך קבוצת ״סלאק״ במשך כל השבוע.
+        div.benefit
+          h2 ללמוד ממעצבים שעובדים בשוק
+          p בזמן שאנחנו לא מעבירים את הקורס אנחנו עובדים עם חברות וסטארטאפים על המוצרים הבאים שלהם. אנחנו מעודכנים במוצרים ובטכונלוגיות החדשות ביותר ולמדנו להכיר תהליך נכון  בו התוצר הסופי משקף את העיצוב בצורה מדויקת ונכונה.
+      div.testimonials-container
+          h2 מעצבים שעברו את הקורס
+          div.cards-container
+            div.card
+              img(src='images/rotem-bix.jpg')
+              strong.name רותם ביקסן
+              p אנחנו מאמינים שהדרך הנכונה והפרודוקטיבית ביותר ללמוד היא באמצעות תרגול. אנחנו נדאג לבסס את הבטחון העצמי שלכם בקוד על ידי מתן מענה מהיר ויעיל דרך קבוצת ״סלאק״ במשך כל השבוע.
+              div.card-footer
+                ul.social-links
+                  li a
+                  li b
+                span.position
+                  | מעצב ב 
+                  a(href='#') roof
+            div.card
+              img(src='images/rotem-bix.jpg')
+              strong.name רותם ביקסן
+              p אנחנו מאמינים שהדרך הנכונה והפרודוקטיבית ביותר ללמוד היא באמצעות תרגול. אנחנו נדאג לבסס את הבטחון העצמי שלכם בקוד על ידי מתן מענה מהיר ויעיל דרך קבוצת ״סלאק״ במשך כל השבוע.
+              div.card-footer
+                ul.social-links
+                  li a
+                  li b
+                span.position
+                  | מעצב ב 
+                  a(href='#') roof
+            div.card
+              img(src='images/rotem-bix.jpg')
+              strong.name רותם ביקסן
+              p אנחנו מאמינים שהדרך הנכונה והפרודוקטיבית ביותר ללמוד היא באמצעות תרגול. אנחנו נדאג לבסס את הבטחון העצמי שלכם בקוד על ידי מתן מענה מהיר ויעיל דרך קבוצת ״סלאק״ במשך כל השבוע.
+              div.card-footer
+                ul.social-links
+                  li a
+                  li b
+                span.position
+                  | מעצב ב 
+                  a(href='#')
+                    img.company-logo(src='images/roof-logo.png')
+    script(src='js/main.js')
+        

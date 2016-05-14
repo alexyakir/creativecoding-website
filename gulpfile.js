@@ -1,5 +1,5 @@
 /*====================================
-=            Gulp Plugins            =
+=             Plugins               =
 ====================================*/
 
 var gulp = require('gulp');
@@ -9,17 +9,11 @@ var browserSync = require('browser-sync');
 var sass = require('gulp-sass');
 var imagemin = require('gulp-imagemin');
 var uglify = require('gulp-uglify');
-
-
-/*=======================================
-=            Postcss Plugins            =
-=======================================*/
-
-
 var postcss = require('gulp-postcss');
-var lost = require('lost');
 var normalize = require('postcss-normalize');
 var autoprefixer = require('autoprefixer');
+var nano = require('gulp-cssnano');
+var svgstore = require('gulp-svgstore');
 
 
 /*====================================
@@ -45,17 +39,17 @@ gulp.task('js:libs', function() {
 
 gulp.task('styles', function () {
     var processors = [
-      lost,
       autoprefixer({browsers: ['last 2 version']}),
       normalize
     ];
     return gulp.src('src/scss/style.scss')
         .pipe(sass().on('error', sass.logError))
         .pipe(postcss(processors))
+        .pipe(nano())
         .pipe(gulp.dest('dist/css'))
         .pipe(browserSync.reload({
           stream: true
-        }))
+        }));
 });
 
 
@@ -91,6 +85,16 @@ gulp.task('browserSync', function() {
   })
 });
 
+/*==========================================
+=            Svg Sprite Task            =
+==========================================*/
+
+gulp.task('svgstore', function () {
+    return gulp
+        .src('src/**/*.svg')
+        .pipe(svgstore())
+        .pipe(gulp.dest('dist/images'));
+});
 
 
 /*==========================================
@@ -113,7 +117,7 @@ gulp.task('imagemin', function() {
 =            Gulp General Tasks           =
 ==========================================*/
 
-gulp.task('default', ['styles', 'pug', 'watch', 'js:libs', 'browserSync']);
-gulp.task('build', ['styles', 'pug', 'imagemin', 'js:libs', 'browserSync']);
+gulp.task('default', ['styles', 'pug', 'svgstore', 'watch', 'js:libs', 'browserSync']);
+gulp.task('build', ['default','imagemin']);
 
 

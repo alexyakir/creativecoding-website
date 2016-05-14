@@ -12,15 +12,17 @@
     "autoprefixer": "*",
     "browser-sync": "*",
     "gulp": "*",
-    "gulp-imagemin": "*",
     "gulp-concat": "*",
+    "gulp-cssnano": "^2.1.2",
+    "gulp-fontmin": "^0.7.4",
+    "gulp-imagemin": "*",
     "gulp-postcss": "*",
     "gulp-pug": "*",
     "gulp-sass": "*",
+    "gulp-uglify": "*",
     "lost": "*",
     "postcss-normalize": "*",
     "precss": "*",
-    "pug": "*",
-    "gulp-uglify": "*"
+    "pug": "*"
   }
 }
