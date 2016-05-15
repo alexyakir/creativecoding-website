@@ -44,6 +44,13 @@
   }
 }
 
+.courses-header-container {
+  @extend .center-container;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .class-metadata {
   max-width: 340px;
   transition: all 0.2s;
@@ -98,16 +105,10 @@
   }
 }
 
-.courses-header-container {
-  @extend .center-container;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
 .course-header-text {
   width: 638px;
   text-align: left;
+  margin-left: 30px;
   h1 {
     width: 100%;
     height: 206px;
@@ -150,30 +151,38 @@
   display: flex;
   flex-wrap: wrap;
   h2 {
-    border-bottom: 1px solid lighten($brand-dark, 15%);
+    position: relative;
     display: inline-block;
+    text-shadow: 3px 1px 0px $brand-dark, -3px -1px 0px $brand-dark;
+    margin-bottom: 12px;
+    &:after {
+      content: "";
+      border-bottom: 1px solid lighten($brand-dark, 15%);
+      display: inline-block;
+      position: absolute;
+      bottom: 3px;
+      right: 0;
+      width: 100%;
+      z-index: -1;
+    }
   }
   .benefit {
     max-width: 50%;
-    padding: 0px 30px 50px 60px;
+    padding: 40px 0px 0px 60px;
   }
 }
 
 .testimonials-container {
   @extend .center-container;
   h2 {
-    text-align: center;
-    font-weight: 100;
-    color: $text-gray;
-    margin-bottom: 60px;
-    font-size: $font-size-base*2;
+    @extend .center-heading;
   }
   .cards-container {
     display: flex;
     justify-content: center;
   }
   .card {
-    background: linear-gradient(-45deg, darken($brand-dark, 15%) 0%, darken($brand-dark, 7%) 100%);
+    // background: linear-gradient(-45deg, darken($brand-dark, 15%) 0%, darken($brand-dark, 7%) 100%);
     border-radius: $border-radius-base;
     text-align: center;
     padding: 40px 40px 0px 40px;
@@ -181,6 +190,7 @@
     overflow: hidden;
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.4);
     transition: all 0.2s;
+    border: 1px solid lighten($brand-dark, 7%);
     &:hover {
       transform: scale(1.02);
       box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.4);
@@ -189,10 +199,10 @@
       width: 112px;
       border-radius: 50%;
     }
-    strong{
-        display: block;
-        margin: 10px 0px 15px 0px;
-        font-size: 18px;
+    strong {
+      display: block;
+      margin: 10px 0px 15px 0px;
+      font-size: 18px;
     }
     p {
       font-size: $font-size-small;
@@ -206,10 +216,42 @@
     padding: 15px 20px;
     background-color: lighten($brand-dark, 7%);
     li {
-      display: inline;
+      display: inline-block;
+      margin-right: 10px;
+      color: darken($text-gray, 10%);
     }
-    .company-logo{
-        height: 16px;
+    .company-logo {
+      height: 16px;
+    }
+  }
+}
+
+.course-topics-container {
+  @extend .center-container;
+  h2 {
+    @extend .center-heading;
+  }
+  .course-topics {
+    padding: 0px 80px;
+  }
+  .topic {
+    display: flex;
+    // align-items: center;
+    padding: 30px 0px;
+    border-top: 1px solid lighten($brand-dark, 10%);
+    &:last-child {
+      border-bottom: 1px solid lighten($brand-dark, 10%);
+    }
+    .topic-header,
+    .topic-time,
+    .topic-desc {
+      margin-right: 30px;
+    }
+    .topic-header {
+      width: 30%;
+    }
+    .topic-time {
+      width: 20%;
     }
   }
 }

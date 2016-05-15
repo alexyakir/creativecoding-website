@@ -10,6 +10,8 @@ body {
     font-weight: 400;
     color: $brand-light;
     font-size: $font-size-base;
+    background-color: $brand-dark;
+
 }
 
 ul {
@@ -21,6 +23,7 @@ ul {
 p {
     font-weight: 100;
     line-height: $line-height-block;
+    margin: 0;
 }
 
 h1,
@@ -37,11 +40,6 @@ a {
     color: $brand-blue;
 }
 
-.wrapper {
-    width: 100%;
-    height: 100%;
-    background-color: $brand-dark;
-}
 
 .btn {
     cursor: pointer;
