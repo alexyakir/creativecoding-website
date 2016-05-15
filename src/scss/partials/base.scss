@@ -66,7 +66,7 @@
 .courses-header-container {
   display: flex;
   justify-content: space-between;
-  align-items: baseline;
+  align-items: center;
 }
 
 .class-metadata {
@@ -120,11 +120,11 @@
 
 .course-header-text {
   width: 638px;
-
+    
   text-align: left;
-  margin-left: 30px;
+  margin-left: 50px;
+  margin-top: 60px;
   h1 {
-
     height: 288px;
     font: 0/0 a;
     color: transparent;
@@ -136,7 +136,7 @@
     }
     background-image: url('../images/html+css-header.png');
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100%;
   }
   
 }
