@@ -1,0 +1,15 @@
+extends layouts/base.pug
+block page 
+  header
+    nav.main-navigation(dir='ltr')
+      ul
+        li.tab.active
+          a(href="index.html") קורסים
+        li.tab
+          a(href="about.html") מי אנחנו
+        li.tab
+          a מי אנחנו
+  main
+    div.signup-form-container.center-container
+      include partials/signup-form.html
+    
