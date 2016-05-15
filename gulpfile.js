@@ -10,7 +10,6 @@ var sass = require('gulp-sass');
 var imagemin = require('gulp-imagemin');
 var uglify = require('gulp-uglify');
 var postcss = require('gulp-postcss');
-var normalize = require('postcss-normalize');
 var autoprefixer = require('autoprefixer');
 var nano = require('gulp-cssnano');
 var svgstore = require('gulp-svgstore');
@@ -39,8 +38,7 @@ gulp.task('js:libs', function() {
 
 gulp.task('styles', function () {
     var processors = [
-      autoprefixer({browsers: ['last 2 version']}),
-      normalize
+      autoprefixer({browsers: ['last 2 version']})
     ];
     return gulp.src('src/scss/style.scss')
         .pipe(sass().on('error', sass.logError))

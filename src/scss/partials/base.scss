@@ -28,13 +28,32 @@
 
 .logo-container {
   position: absolute;
-  left: 3px;
-  ol {
-    counter-reset: item;
-    list-style-type: none;
-    font-size: 12px;
-    color: lighten($brand-dark, 12%)
+  left: 16px;
+  top: 60px;
+  .logo {
+    transform: rotate(-90deg);
+    letter-spacing: 1px;
+    transform-origin: center left;
+    width: 100%;
+    font-family: "Inconsolata";
+    font-weight: 400;
+    font-size: 15px;
+    position: absolute;
+    color: $text-gray;
+    span {
+      color: $brand-yellow;
+    }
   }
+}
+
+.sidenumbers {
+  position: absolute;
+  left: 0;
+  top: 190px;
+  counter-reset: item;
+  list-style-type: none;
+  font-size: 12px;
+  color: lighten($brand-dark, 12%);
   li {
     padding-top: 5px;
   }
@@ -45,25 +64,19 @@
 }
 
 .courses-header-container {
-  @extend .center-container;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
 .class-metadata {
+  @extend .hover-scale-box;
   max-width: 340px;
-  transition: all 0.2s;
   border-radius: $border-radius-base;
   overflow: hidden;
   padding: 40px 40px 0px 40px;
   margin-top: 80px;
-  background: linear-gradient(45deg, #313538 0%, #2b2d2f 100%);
-  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.4);
-  &:hover {
-    transform: scale(1.02);
-    box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.4);
-  }
+  background: linear-gradient(45deg, lighten($brand-dark, 2%) 0%, lighten($brand-dark, 6%) 100%);
   h2 {
     font-size: $font-size-base;
     font-weight: 200;
@@ -147,55 +160,45 @@
 }
 
 .benefits-container {
-  @extend .center-container;
   display: flex;
   flex-wrap: wrap;
-  h2 {
-    position: relative;
-    display: inline-block;
-    text-shadow: 3px 1px 0px $brand-dark, -3px -1px 0px $brand-dark;
+  .benefit-heading {
     margin-bottom: 12px;
-    &:after {
-      content: "";
-      border-bottom: 1px solid lighten($brand-dark, 15%);
-      display: inline-block;
-      position: absolute;
-      bottom: 3px;
-      right: 0;
-      width: 100%;
-      z-index: -1;
-    }
   }
   .benefit {
     max-width: 50%;
     padding: 40px 0px 0px 60px;
+    p {
+      span {
+        &:nth-child(1) {
+          color: $brand-purple;
+        }
+        &:nth-child(2) {
+          color: $brand-yellow;
+        }
+        &:nth-child(3) {
+          color: $brand-blue;
+        }
+      }
+    }
   }
 }
 
 .testimonials-container {
-  @extend .center-container;
-  h2 {
-    @extend .center-heading;
-  }
   .cards-container {
     display: flex;
     justify-content: center;
   }
   .card {
+    @extend .hover-scale-box;
     // background: linear-gradient(-45deg, darken($brand-dark, 15%) 0%, darken($brand-dark, 7%) 100%);
     border-radius: $border-radius-base;
     text-align: center;
     padding: 40px 40px 0px 40px;
     margin: 0px 30px;
     overflow: hidden;
-    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.4);
-    transition: all 0.2s;
     border: 1px solid lighten($brand-dark, 7%);
-    &:hover {
-      transform: scale(1.02);
-      box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.4);
-    }
-    &>img {
+    .card-photo {
       width: 112px;
       border-radius: 50%;
     }
@@ -227,10 +230,6 @@
 }
 
 .course-topics-container {
-  @extend .center-container;
-  h2 {
-    @extend .center-heading;
-  }
   .course-topics {
     padding: 0px 80px;
   }
@@ -252,6 +251,20 @@
     }
     .topic-time {
       width: 20%;
+    }
+  }
+}
+
+.tools {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+  .tool {
+    @extend .hover-scale-img;
+    display: inline-block;
+    img {
+      width: 83px;
     }
   }
 }

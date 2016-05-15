@@ -19,10 +19,9 @@
     "gulp-postcss": "*",
     "gulp-pug": "*",
     "gulp-sass": "*",
-    "gulp-svgstore": "^6.0.0",
+    "gulp-svgstore": "*",
     "gulp-uglify": "*",
     "lost": "*",
-    "postcss-normalize": "*",
     "precss": "*",
     "pug": "*"
   }

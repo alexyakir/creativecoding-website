@@ -21,11 +21,14 @@ html
             a מי אנחנו
     main
       div.logo-container
-        div.logo
-        ol
-          - for (var x = 0; x < 200; x++)
-            li 
-      div.courses-header-container
+        a.logo(href="index.html")
+          | creative
+          span
+            |coding
+      ol.sidenumbers
+        - for (var x = 0; x < 200; x++)
+          li 
+      div.courses-header-container.center-container
         aside.class-metadata
           ul
             li.date
@@ -41,59 +44,72 @@ html
         hgroup.course-header-text(dir='ltr')
           h1 Html + Css course for designers
           h4 for designers!
-      div.benefits-container
+      div.benefits-container.center-container
         div.benefit
-          h2 לגשר על הפער בין עיצוב ופיתוח
+          h2.benefit-heading.underline לגשר על הפער בין עיצוב ופיתוח
           p הפער בין עיצוב לפיתוח היא סוגייה מוכרת ומורכבת בעולם התוכנה. מעצב אשר יודע לגשר על פער זה, הוא בעל ערך רב. בואו לשדרג את הכישורים שלכם בקורס ענייני ומתומצת שבנוי במיוחד למעצבים שרוצים לקחת את הצעד המקצועי הבא שלהם.
         div.benefit
-          h2 ללמוד אונליין בזמן אמת
-          p הקורס מועבר ביום ובשעה קבועים בשבוע ומועבר במתכונת ״וובינר״ - לימוד אונליין בזמן אמת. אתם מקבלים את כל היתרונות של קורס פיזי (שואלים שאלות, מקבלים תמיכה ונשארים מחויבים) בלי החסרונות (לבזבז זמן וכוח בשביל להגיע לשיעור ולחזור מאוחר הביתה).
+          h2.benefit-heading.underline ללמוד אונליין בזמן אמת
+          p 
+            |הקורס מועבר ביום ובשעה קבועים בשבוע ומועבר במתכונת ״וובינר״ - לימוד אונליין בזמן אמת. אתם מקבלים את כל היתרונות של קורס פיזי (
+            span שואלים שאלות,
+            |  
+            span מקבלים תמיכה  
+            | 
+            span ונשארים מחויבים
+            | ) בלי החסרונות (לבזבז זמן וכוח בשביל להגיע לשיעור ולחזור מאוחר הביתה).
         div.benefit
-          h2 לקבל תמיכה בכל זמן
+          h2.benefit-heading.underline לקבל תמיכה בכל זמן
           p אנחנו מאמינים שהדרך הנכונה והפרודוקטיבית ביותר ללמוד היא באמצעות תרגול. אנחנו נדאג לבסס את הבטחון העצמי שלכם בקוד על ידי מתן מענה מהיר ויעיל דרך קבוצת ״סלאק״ במשך כל השבוע.
         div.benefit
-          h2 ללמוד ממעצבים שעובדים בשוק
+          h2.benefit-heading.underline ללמוד ממעצבים שעובדים בשוק
           p בזמן שאנחנו לא מעבירים את הקורס אנחנו עובדים עם חברות וסטארטאפים על המוצרים הבאים שלהם. אנחנו מעודכנים במוצרים ובטכונלוגיות החדשות ביותר ולמדנו להכיר תהליך נכון  בו התוצר הסופי משקף את העיצוב בצורה מדויקת ונכונה.
       div.testimonials-container
-          h2 מעצבים שלמדו איתנו
-          div.cards-container
+          h2.center-heading מעצבים שלמדו איתנו
+          div.cards-container.center-container
             div.card
-              img(src='images/rotem-bix.jpg')
+              img.card-photo(src='images/rotem-bix.jpg')
               strong.name רותם ביקסן
               p אנחנו מאמינים שהדרך הנכונה והפרודוקטיבית ביותר ללמוד היא באמצעות תרגול. אנחנו נדאג לבסס את הבטחון העצמי שלכם בקוד על ידי מתן מענה מהיר ויעיל דרך קבוצת ״סלאק״ במשך כל השבוע.
               div.card-footer
                 ul.social-links
-                  li.ion-social-facebook
-                  li.ion-social-dribbble-outline
+                  li
+                    a.ion-social-facebook
+                  li
+                    a.ion-social-dribbble-outline
                 span.position
                   | מעצב ב 
                   a(href='#') roof
             div.card
-              img(src='images/rotem-bix.jpg')
+              img.card-photo(src='images/rotem-bix.jpg')
               strong.name רותם ביקסן
               p אנחנו מאמינים שהדרך הנכונה והפרודוקטיבית ביותר ללמוד היא באמצעות תרגול. אנחנו נדאג לבסס את הבטחון העצמי שלכם בקוד על ידי מתן מענה מהיר ויעיל דרך קבוצת ״סלאק״ במשך כל השבוע.
               div.card-footer
                 ul.social-links
-                  li.ion-social-facebook
-                  li.ion-social-dribbble-outline
+                  li
+                    a.ion-social-facebook
+                  li
+                    a.ion-social-dribbble-outline
                 span.position
                   | מעצב ב 
                   a(href='#') roof
             div.card
-              img(src='images/rotem-bix.jpg')
+              img.card-photo(src='images/rotem-bix.jpg')
               strong.name רותם ביקסן
               p אנחנו מאמינים שהדרך הנכונה והפרודוקטיבית ביותר ללמוד היא באמצעות תרגול. אנחנו נדאג לבסס את הבטחון העצמי שלכם בקוד על ידי מתן מענה מהיר ויעיל דרך קבוצת ״סלאק״ במשך כל השבוע.
               div.card-footer
                 ul.social-links
-                  li.ion-social-facebook
-                  li.ion-social-dribbble-outline
+                  li
+                    a.ion-social-facebook
+                  li
+                    a.ion-social-dribbble-outline
                 span.position
                   | מעצב ב 
                   a(href='#')
                     img.company-logo(src='images/roof-logo.png')
       div.course-topics-container
-        h2 מה תלמדו בקורס?
-        div.course-topics
+        h2.center-heading מה תלמדו בקורס?
+        div.course-topics.center-container
           div.topic
             h3.topic-header נושא א שתלמדו
             span.topic-time שבוע
@@ -106,5 +122,27 @@ html
             h3.topic-header נושא א שתלמדו
             span.topic-time 3 שבועות
             p.topic-desc אנחנו מאמינים שהדרך הנכונה והפרודוקטיבית ביותר ללמוד היא באמצעות תרגול. אנחנו נדאג לבסס את הבטחון העצמי שלכם בקוד על ידי מתן מענה מהיר ויעיל דרך קבוצת ״סלאק״ במשך כל השבוע.
+      div.tools-container
+        h2.center-heading טכנולוגיות וכלים שתלמדו
+        ul.tools.center-container
+          li.tool
+            a(href="https://slack.com/" target="_blank")
+              img(src="/images/slack-logo@2x.png")
+          li.tool
+            a(href="http://getbootstrap.com/" target="_blank")
+              img(src="/images/bootstrap-logo@2x.png")
+          li.tool
+            a(href="https://www.sublimetext.com/3" target="_blank")
+              img(src="/images/sbt-logo@2x.png")
+          li.tool
+            a(href="http://sass-lang.com/" target="_blank")
+              img(src="/images/sass-logo@2x.png")
+          li.tool
+            a(href="http://codepen.io/" target="_blank")
+              img(src="/images/codepen-logo@2x.png")
+          li.tool
+            a(href="http://gulpjs.com/" target="_blank")
+            img(src="/images/gulp-logo@2x.png") 
+
     script(src='js/main.js')
         
