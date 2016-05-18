@@ -71,6 +71,8 @@ gulp.task('pug', function() {
 gulp.task('watch',['browserSync', 'styles', 'pug', 'js:libs'], function(){
   gulp.watch('src/scss/**/*.scss', ['styles']); 
   gulp.watch('src/views/**/*.pug', ['pug']);
+  gulp.watch('src/views/**/*.html', ['pug']);
+
   gulp.watch('src/js/**/*.js', ['js:libs']); 
   gulp.watch('dist/js/**/*.js', browserSync.reload); 
 });

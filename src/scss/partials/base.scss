@@ -37,7 +37,7 @@
     width: 100%;
     font-family: "Inconsolata";
     font-weight: 400;
-    font-size: 15px;
+    font-size: 13px;
     position: absolute;
     color: $text-gray;
     span {
@@ -49,7 +49,7 @@
 .sidenumbers {
   position: absolute;
   left: 0;
-  top: 250px;
+  top: 230px;
   counter-reset: item;
   list-style-type: none;
   font-size: 12px;
@@ -120,7 +120,6 @@
 
 .course-header-text {
   width: 638px;
-    
   text-align: left;
   margin-left: 50px;
   margin-top: 60px;
@@ -138,7 +137,6 @@
     background-repeat: no-repeat;
     background-size: 100%;
   }
-  
 }
 
 .benefits-container {
@@ -248,5 +246,35 @@
     img {
       width: 83px;
     }
+  }
+}
+
+.signup-form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.signup-form {
+  padding: 30px;
+  width: 350px;
+  input, textarea {
+    display: inline-block;
+    width: 100%;
+    &:not(:first-child) {
+      margin: 15px 0px;
+    }
+  }
+  label {
+    display: block;
+    margin-bottom: -6px;
+    &:hover{
+      color: $brand-yellow;
+    }
+  }
+  small {
+    display: block;
+    margin-top: -6px;
+    margin-bottom: 15px;
   }
 }

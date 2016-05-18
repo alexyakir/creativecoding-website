@@ -6,14 +6,15 @@
 
 body {
   direction: rtl;
-  font-family: 'Open Sans Hebrew', 'Open Sans', sans-serif;
+  font-family: 'Open Sans Hebrew', 'Inconsolata', 'Open Sans', sans-serif;
   font-weight: 400;
   color: $brand-light;
   font-size: $font-size-base;
   background-color: $brand-dark;
 }
 
-ul, ol {
+ul,
+ol {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -81,5 +82,35 @@ a {
   &:hover {
     filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.6));
     transform: scale(1.02);
+  }
+}
+
+input, textarea {
+  border-radius: $border-radius-base;
+  background-color: $brand-dark;
+  border: 1px solid $text-gray;
+  color: $brand-light;
+  padding: 15px 20px;
+  font-weight: 100;
+  font-family: 'Inconsolata', 'Open Sans Hebrew', serif;
+  &:focus {
+    border: 1px solid $brand-purple;
+    outline-color: transparent;
+    outline-style: none;
+  }
+}
+
+label {
+  color: $text-gray;
+}
+
+.btn-yellow {
+  cursor: pointer;
+  background-color: $brand-yellow;
+  border: transparent;
+  color: $brand-dark;
+  font-weight: 700;
+  &:hover {
+    background-color: $brand-purple;
   }
 }

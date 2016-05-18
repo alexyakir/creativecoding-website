@@ -1,0 +1,12 @@
+form(method='POST').signup-form#signup-form
+  input(type="hidden" name="_subject" value="New course submission")
+  label(for='name') שמכם המלא
+  input(type='text', name='name' id='name')
+  label(for='email') אימייל
+  input(type='email', name='_replyto' id="email")
+  small בקשת התשלום ועדכונים נוספים לגבי הקורס ישלחו לכתובת זו. אין לנו עניין בספאם.
+  label(for='how') איך הגעתם עלינו?
+  textarea(type='textarea', rows="3" name='how' id="how")
+  input(type="text" name="_gotcha" style="display:none")
+  input(type='submit', value='שלח').btn-yellow
+
