@@ -87,8 +87,8 @@ a {
 
 input, textarea {
   border-radius: $border-radius-base;
-  background-color: $brand-dark;
-  border: 1px solid $text-gray;
+  background-color: lighten($brand-dark, 0.5%);
+  border: 1px solid darken($text-gray, 30%);
   color: $brand-light;
   padding: 15px 20px;
   font-weight: 100;

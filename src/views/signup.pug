@@ -16,6 +16,17 @@ block page
     - for (var x = 0; x < 200; x++)
       li
   main
-    div.signup-form-container.center-container
-      include partials/signup-form.pug
+    div.center-container.signup-header-container
+      div.signup-header-text
+        h1 שמחים שבחרתם להצטרף!
+        span אוקיי אז ככה זה עובד:
+        ol
+          li מלאו את פרטיכם והירשמו לקורס. כדאי להבטיח את מקומכם מפני שמספר המקומות מוגבל, על מנת שנצליח לשמור על איכות הקורס. 
+          li לאחר שתתגבש קבוצה, נשלח לכם לינק לתשלום דרך פייפאל - אל דאגה ניתן לשלם גם בכרטיס אשראי.
+          li ניתן לשאול אותנו כל שאלה דרך המייל 
+            a(href="mailto:hello@creativecoding.co.il") hello@creativecoding.co.il 
+      .signup-form-container
+        include partials/signup-form.pug
+
+
     
