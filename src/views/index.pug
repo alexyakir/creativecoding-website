@@ -4,27 +4,26 @@ block page
     nav.main-navigation
       ul
         li.tab.active
-          a(href="index.html") קורסים
+          a(href="index.html").home קורסים
         li.tab
-          a(href="about.html") מי אנחנו
-        li.tab
-          a מי אנחנו
+          a(href="about.html").about מי אנחנו
   div.logo-container
     a.logo(href="index.html")
       | creativecoding.co.il
-  ol.sidenumbers
-    - for (var x = 0; x < 200; x++)
-      li 
   main
+    a.coming-soon(href="http://www.sketchapp.com/" target="_blank")
+      img(src="images/sketch-app-icon@2x.png")
+      h4 בקרוב! קורס 
+        span Sketch
     div.courses-header-container.center-container
       aside.class-metadata
         ul
           li.date
-            h2 הקורס הבא
-            h3 01.06.2016
-          li.price
             h2 מחיר
             h3 5000 ₪ (כולל מע״מ)
+          li.price
+            h2 הקורס הבא
+            h3 01.06.2016
           li 20 מפגשים וירטואלים
           li 17:00 - 19:00, בימי ראשון
           li תמיכה כל השבוע דרך סלאק
@@ -33,12 +32,12 @@ block page
         h1 Html + Css course for designers
     div.benefits-container.center-container
       div.benefit
-        h2.benefit-heading.underline לגשר על הפער בין עיצוב ופיתוח
-        p הפער בין עיצוב לפיתוח היא סוגייה מוכרת ומורכבת בעולם התוכנה. מעצב אשר יודע לגשר על פער זה, הוא בעל ערך רב. בואו לשדרג את הכישורים שלכם בקורס ענייני ומתומצת שבנוי במיוחד למעצבים שרוצים לקחת את הצעד המקצועי הבא שלהם.
+        h2.benefit-heading.underline ללמוד ממעצבים שעובדים בשוק
+        p בזמן שאנחנו לא מעבירים את הקורס אנחנו עובדים עם חברות וסטארטאפים על המוצרים הבאים שלהם. אנחנו מעודכנים במוצרים ובטכונלוגיות החדשות ביותר ולמדנו להכיר תהליך נכון  בו התוצר הסופי משקף את העיצוב בצורה מדויקת ונכונה.
       div.benefit
         h2.benefit-heading.underline ללמוד אונליין בזמן אמת
         p 
-          |הקורס מועבר ביום ובשעה קבועים בשבוע ומועבר במתכונת ״וובינר״ - לימוד אונליין בזמן אמת. אתם מקבלים את כל היתרונות של קורס פיזי (
+          |הקורס מתקיים ביום ובשעה קבועים בשבוע ומועבר במתכונת ״וובינר״ - לימוד אונליין בזמן אמת. אתם מקבלים את כל היתרונות של קורס פיזי (
           span שואלים שאלות,
           |  
           span מקבלים תמיכה  
@@ -49,51 +48,44 @@ block page
         h2.benefit-heading.underline לקבל תמיכה בכל זמן
         p אנחנו מאמינים שהדרך הנכונה והפרודוקטיבית ביותר ללמוד היא באמצעות תרגול. אנחנו נדאג לבסס את הבטחון העצמי שלכם בקוד על ידי מתן מענה מהיר ויעיל דרך קבוצת ״סלאק״ במשך כל השבוע.
       div.benefit
-        h2.benefit-heading.underline ללמוד ממעצבים שעובדים בשוק
-        p בזמן שאנחנו לא מעבירים את הקורס אנחנו עובדים עם חברות וסטארטאפים על המוצרים הבאים שלהם. אנחנו מעודכנים במוצרים ובטכונלוגיות החדשות ביותר ולמדנו להכיר תהליך נכון  בו התוצר הסופי משקף את העיצוב בצורה מדויקת ונכונה.
+        h2.benefit-heading.underline לגשר על הפער בין עיצוב ופיתוח
+        p הפער בין עיצוב לפיתוח היא בעייה מוכרת ומורכבת בעולם המוצר. מעצבים שידעו לגשר על פער זה, יהיו בעלי ערך רב. בואו לשדרג את הכישורים שלכם בקורס ענייני ומתומצת שבנוי במיוחד למעצבים שרוצים לקחת את הצעד המקצועי הבא שלהם.
     div.testimonials-container
         h2.center-heading מעצבים שלמדו איתנו
         div.cards-container.center-container
           div.card
             img.card-photo(src='images/rotem-bix.jpg')
             strong.name רותם ביקסן
-            p אנחנו מאמינים שהדרך הנכונה והפרודוקטיבית ביותר ללמוד היא באמצעות תרגול. אנחנו נדאג לבסס את הבטחון העצמי שלכם בקוד על ידי מתן מענה מהיר ויעיל דרך קבוצת ״סלאק״ במשך כל השבוע.
+            p ״ הקורס מקצועי מאוד​.​ אולג ואלכס לא משאירים קצוות פרומים​​ ומכניסים אותך לאט לאט ובאופן מובנה לחומר הנלמד​.​הפורמט של הקורס מאוד נוח ומאפשר שאלות בזמן אמת​.​ יש זמינות מחוץ לשעות הקורס וההיענות לבעיות בתרגילים​ ​מהירה​.​ מומלץ בחום. ״
             div.card-footer
               ul.social-links
                 li
-                  a.ion-social-facebook
+                  a.ion-social-instagram(href="https://www.instagram.com/bicksn/" target="_blank")
                 li
-                  a.ion-social-dribbble-outline
-              span.position
-                | מעצב ב 
-                a(href='#') roof
+                  a.ion-ios-world(href="http://www.rotembix.com/" target="_blank")
+              
           div.card
-            img.card-photo(src='images/rotem-bix.jpg')
-            strong.name רותם ביקסן
-            p אנחנו מאמינים שהדרך הנכונה והפרודוקטיבית ביותר ללמוד היא באמצעות תרגול. אנחנו נדאג לבסס את הבטחון העצמי שלכם בקוד על ידי מתן מענה מהיר ויעיל דרך קבוצת ״סלאק״ במשך כל השבוע.
+            img.card-photo(src='images/michal-reicher.jpg')
+            strong.name מיכל רייכר
+            p " קורס יסודי. אולג ואלכס מסבירים לעומק ובבהירות, כך שגם ללא שום ידע קודם מצליחים להגיע   לרמה גבוהה והבנה של מבנה הקוד. בקבוצת דיון יש תמיכה מהירה, גם מצד התלמידים. השיעורים מוקלטים וזמינים בכל זמן ובנוסף ניתנים הרבה מקורות נוספים למי שרוצה להעמיק."
             div.card-footer
               ul.social-links
                 li
-                  a.ion-social-facebook
+                  a.ion-social-facebook(href="https://www.facebook.com/michal.reicher?fref=ts" target="_blank")
                 li
-                  a.ion-social-dribbble-outline
-              span.position
-                | מעצב ב 
-                a(href='#') roof
+                  a.ion-ios-world(href="http://michalrei.com/" target="_blank")
+              
           div.card
-            img.card-photo(src='images/rotem-bix.jpg')
-            strong.name רותם ביקסן
-            p אנחנו מאמינים שהדרך הנכונה והפרודוקטיבית ביותר ללמוד היא באמצעות תרגול. אנחנו נדאג לבסס את הבטחון העצמי שלכם בקוד על ידי מתן מענה מהיר ויעיל דרך קבוצת ״סלאק״ במשך כל השבוע.
+            img.card-photo(src='images/shira-haran.jpg')
+            strong.name שירה הרן
+            p " היתרון הגדול בקורס הוא למידה ממעצבים. ההתמקדות היא בדברים רלוונטים לנו ולעבודה מול מתכנתים. הקורס עזר לי להבין איך לעבוד נכון, ולהצליח לתקשר קצת יותר לעומק עם מתכנת. ולפעמים אפילו להצליח לעשות משהו לבד בלי לבקש עזרה של מתכנת. ממליצה בחום."
+
             div.card-footer
               ul.social-links
                 li
-                  a.ion-social-facebook
+                  a.ion-social-facebook(href="https://www.facebook.com/shira.haran?fref=ts" target="_blank")
                 li
-                  a.ion-social-dribbble-outline
-              span.position
-                | מעצב ב 
-                a(href='#')
-                  img.company-logo(src='images/roof-logo.png')
+                  a.ion-ios-world(href="http://cargocollective.com/shiraharan/" target="_blank")
     div.course-topics-container
       h2.center-heading מה תלמדו בקורס?
       div.course-topics.center-container

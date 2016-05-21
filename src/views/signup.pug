@@ -1,21 +1,16 @@
 extends layouts/base.pug
 block page 
   header
-    nav.main-navigation(dir='ltr')
+    nav.main-navigation
       ul
-        li.tab.active
-          a(href="index.html") קורסים
         li.tab
-          a(href="about.html") מי אנחנו
+          a(href="index.html").home קורסים
         li.tab
-          a מי אנחנו
+          a(href="about.html").about מי אנחנו
   div.logo-container
     a.logo(href="index.html")
       | creativecoding.co.il
-  ol.sidenumbers
-    - for (var x = 0; x < 200; x++)
-      li
-  main
+  main.signup-page
     div.center-container.signup-header-container
       div.signup-header-text
         h1 שמחים שבחרתם להצטרף!

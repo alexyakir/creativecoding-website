@@ -5,12 +5,18 @@
 }
 
 body {
+  background-image: url(../images/numbers.svg);
+  background-repeat: no-repeat;
+  background-size: 27px;
+  background-position-y: 230px;
   direction: rtl;
   font-family: 'Open Sans Hebrew', 'Inconsolata', 'Open Sans', sans-serif;
   font-weight: 400;
   color: $brand-light;
   font-size: $font-size-base;
   background-color: $brand-dark;
+  position: relative;
+  height: 100%;
 }
 
 ul,
@@ -63,10 +69,10 @@ a {
 
 .center-heading {
   text-align: center;
-  font-weight: 500;
-  color: $text-gray;
-  margin-bottom: 60px;
-  font-size: $font-size-base*2;
+  font-weight: 100;
+  color: darken($text-gray, 20%);
+  margin: 120px 0px 70px 0px;
+  font-size: $font-size-base*3;
 }
 
 .hover-scale-box {
@@ -85,7 +91,8 @@ a {
   }
 }
 
-input, textarea {
+input,
+textarea {
   border-radius: $border-radius-base;
   background-color: lighten($brand-dark, 0.5%);
   border: 1px solid darken($text-gray, 30%);
