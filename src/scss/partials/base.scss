@@ -15,6 +15,7 @@
     border-style: solid;
     border-width: 10px 41px;
     border-image: url('../images/tab-light.svg') 10 41 fill stretch;
+    filter: drop-shadow(-2px 5px 2px RGBA(38, 41, 44, 0.8));
     font-size: $font-size-small;
     width: 50%;
     max-width: 190px;
@@ -22,10 +23,17 @@
     // filter: drop-shadow(2px 0px 3px rgba(0, 0, 0, 0.5));
     &.active {
       border-image: url('../images/tab-dark.svg') 10 41 fill stretch;
-      z-index: 1;
+      z-index: 3;
+
     }
     &:not(:first-child) {
       margin-right: -30px;
+    }
+    &:nth-child(2){
+      z-index: 2;
+    }
+    &:nth-child(3){
+      z-index: 1;
     }
   }
 }
@@ -282,9 +290,12 @@
     }
     .topic-header {
       width: 30%;
+      margin-bottom: 15px;
+
     }
     .topic-time {
       width: 20%;
+      margin-bottom: 15px;
     }
   }
 }
@@ -297,6 +308,7 @@
   .tool {
     @extend .hover-scale-img;
     display: inline-block;
+    margin: 20px 20px;
     img {
       width: 83px;
     }
@@ -357,5 +369,21 @@
     display: block;
     margin-top: -6px;
     margin-bottom: 15px;
+  }
+}
+
+footer{
+  text-align: left;
+  font-family: "Inconsolata";
+  padding: 30px 0;
+  background-color: darken($brand-dark, 5%);
+  .center-container{
+    margin-bottom: 0;
+  }
+  .copyright{
+    color: $text-gray;
+  }
+  .logo-container-footer{
+    float: right;
   }
 }
