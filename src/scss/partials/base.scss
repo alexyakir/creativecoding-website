@@ -23,7 +23,7 @@
     // filter: drop-shadow(2px 0px 3px rgba(0, 0, 0, 0.5));
     &.active {
       border-image: url('../images/tab-dark.svg') 10 41 fill stretch;
-      z-index: 3;
+      z-index: 3 !important;
 
     }
     &:not(:first-child) {
@@ -321,21 +321,31 @@
   justify-content: space-around;
 }
 
+.contact-header-container{
+  // height: 100%;
+}
+.contact-form-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  form{
+  padding-top: 80px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;  
+  }
+  
+}
 .signup-header-text {
-  // padding: 0 160px;
   max-width: 500px;
   h1 {
     font-weight: 600;
-    // color: $text-gray;
     font-size: 40px;
   }
   ol {
     color: $text-gray;
-    // margin-right: 15px;
     margin-top: 40px;
-    // list-style-type: decimal;
     li {
-      // font-size: 15px;
       margin-bottom: 25px;
       line-height: $line-height-block;
     }
@@ -345,11 +355,11 @@
   }
 }
 
-.signup-form {
+.signup-form, .contact-form{
   padding: 30px 30px 30px 30px;
   background-color: lighten($brand-dark, 4%);
   border-radius: $border-radius-base;
-  width: 350px;
+
   input,
   textarea {
     display: inline-block;
@@ -372,6 +382,13 @@
   }
 }
 
+.contact-form {
+ width: 650px;
+
+}
+.signup-form{
+  width: 350px;
+}
 footer{
   text-align: left;
   font-family: "Inconsolata";

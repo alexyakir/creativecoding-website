@@ -1,0 +1,13 @@
+form(method='POST').contact-form#form
+  div
+    input(type="hidden" name="_subject" value="New contact")
+    label(for='name') שמכם המלא
+    input(type='text', name='name' id='name')
+    label(for='email') אימייל
+    input(type='email', name='_replyto' id="email")
+  div
+    label(for='question') אתם מוזמנים לשאול אותנו כל שאלה.
+    textarea(type='textarea', rows="3" name='how' id="question")
+    input(type="text" name="_gotcha" style="display:none")
+    input(type='submit', value='שלח').btn-yellow
+
