@@ -5,7 +5,7 @@
     color: $brand-light;
   }
   ul {
-    @media only screen and (max-width: 640px) {
+    @media (max-width: 640px) {
       margin-right: 0;
     }
     margin-right: 30px;
@@ -24,30 +24,30 @@
     &.active {
       border-image: url('../images/tab-dark.svg') 10 41 fill stretch;
       z-index: 3 !important;
-
     }
     &:not(:first-child) {
       margin-right: -30px;
     }
-    &:nth-child(2){
+    &:nth-child(2) {
       z-index: 2;
     }
-    &:nth-child(3){
+    &:nth-child(3) {
       z-index: 1;
     }
   }
 }
-#lock{
+
+#lock {
   position: fixed;
-  top:0;
+  top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   background-color: red;
   z-index: 9999;
-  input{
-  }
+  input {}
 }
+
 .logo-container {
   position: absolute;
   left: 15px;
@@ -94,7 +94,7 @@
     width: 60px;
     margin: 0 auto 7px auto;
   }
-  @media only screen and (max-width: 821px) {
+  @media (max-width: 821px) {
     display: none;
   }
 }
@@ -104,7 +104,7 @@
   justify-content: space-between;
   align-items: center;
   padding-top: 80px;
-  @media only screen and (max-width: 821px) {
+  @media (max-width: 821px) {
     flex-direction: column;
     justify-content: space-betwen;
   }
@@ -184,7 +184,7 @@
   .benefit {
     width: 50%;
     padding: 40px 0px 0px 60px;
-    @media only screen and (max-width: 821px) {
+    @media (max-width: 821px) {
       width: 100%;
       padding: 40px 40px 0px 40px;
       .underline {
@@ -209,70 +209,73 @@
   }
 }
 
-.testimonials-container {
-  .cards-container {
-    display: flex;
-    justify-content: center;
-    // align-items: flex-start;
-    @media only screen and (max-width: 930px) {
-      flex-direction: column;
+.cards-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @media (max-width: 930px) {
+    flex-direction: column;
+  }
+}
+
+.card {
+  @media (max-width: 930px) {
+    &:not(:first-child) {
+      margin-top: 30px;
     }
   }
-  .card {
-    @media only screen and (max-width: 930px) {
-      &:not(:first-child) {
-        margin-top: 30px;
-      }
-    }
-    position: relative;
-    flex: 1;
-    @extend .hover-scale-box;
-    border-radius: $border-radius-base;
-    text-align: center;
-    padding: 40px 40px 0px 40px;
-    margin-left: 30px;
-    margin-right: 30px;
-    overflow: hidden;
-    border: 1px solid lighten($brand-dark,
-    7%);
-    &:hover {
-      background-color: lighten($brand-dark, 2%);
-    }
-    .card-photo {
-      width: 112px;
-      border-radius: 50%;
-    }
-    strong {
-      display: block;
-      margin: 10px 0px 15px 0px;
-      font-size: 18px;
-    }
-    p {
-      font-size: $font-size-small;
-      line-height: ceil($font-size-small * 1.6);
-      margin-bottom: 80px;
-    }
+  @media (min-width: 930px) {
+  align-self: stretch;
   }
-  .card-footer {
-    position: absolute;
-    width: 100%;
-    bottom: 0;
-    display: flex;
-    justify-content: space-between;
-    justify-content: center;
-    margin: 30px -40px 0;
-    padding: 15px 20px;
-    background-color: lighten($brand-dark, 7%);
-    li {
-      font-size: 20px;
-      display: inline-block;
-      margin: auto 10px;
-      color: darken($text-gray, 10%);
-      a {
-        color: $brand-yellow;
-        &:hover {
-          color: $brand-purple;
-        }
+  max-width: 400px;
+  position: relative;
+  @extend .hover-scale-box;
+  border-radius: $border-radius-base;
+  text-align: center;
+  padding: 40px 40px 0px 40px;
+  margin-left: 30px;
+  margin-right: 30px;
+  overflow: hidden;
+  border: 1px solid lighten($brand-dark,
+  7%);
+  &:hover {
+    background-color: lighten($brand-dark, 2%);
+  }
+  .card-photo {
+    width: 112px;
+    border-radius: 50%;
+  }
+  strong {
+    display: block;
+    margin: 10px 0px 15px 0px;
+    font-size: 18px;
+  }
+  p {
+    font-size: $font-size-small;
+    line-height: ceil($font-size-small * 1.6);
+    margin-bottom: 100px;
+  }
+}
+
+.card-footer {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  justify-content: center;
+  margin: 30px -40px 0;
+  padding: 15px 20px;
+  background-color: lighten($brand-dark, 7%);
+  li {
+    font-size: 20px;
+    display: inline-block;
+    margin: auto 10px;
+    color: darken($text-gray, 10%);
+    a {
+      color: $brand-yellow;
+      &:hover {
+        color: $brand-purple;
       }
     }
   }
@@ -287,7 +290,7 @@
     // align-items: center;
     padding: 30px 0px;
     border-top: 1px solid lighten($brand-dark, 10%);
-    @media only screen and (max-width: 820px) {
+    @media (max-width: 820px) {
       flex-direction: column;
     }
     &:last-child {
@@ -301,7 +304,6 @@
     .topic-header {
       width: 30%;
       margin-bottom: 15px;
-
     }
     .topic-time {
       width: 20%;
@@ -331,21 +333,22 @@
   justify-content: space-around;
 }
 
-.contact-header-container{
+.contact-header-container {
   // height: 100%;
 }
+
 .contact-form-container {
   display: flex;
   align-items: center;
   justify-content: center;
-  form{
-  padding-top: 80px;
-  display: flex;
-  justify-content: space-around;
-  flex-direction: row;  
+  form {
+    padding-top: 80px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
   }
-  
 }
+
 .signup-header-text {
   max-width: 500px;
   h1 {
@@ -365,11 +368,11 @@
   }
 }
 
-.signup-form, .contact-form{
+.signup-form,
+.contact-form {
   padding: 30px 30px 30px 30px;
   background-color: lighten($brand-dark, 4%);
   border-radius: $border-radius-base;
-
   input,
   textarea {
     display: inline-block;
@@ -393,24 +396,40 @@
 }
 
 .contact-form {
- width: 650px;
-
+  width: 650px;
 }
-.signup-form{
+
+.signup-form {
   width: 350px;
 }
-footer{
+
+footer {
   text-align: left;
   font-family: "Inconsolata";
   padding: 30px 0;
   background-color: darken($brand-dark, 5%);
-  .center-container{
+  .center-container {
     margin-bottom: 0;
   }
-  .copyright{
+  .copyright {
     color: $text-gray;
   }
-  .logo-container-footer{
+  .logo-container-footer {
     float: right;
   }
+}
+
+.about-header-container{
+  .about-header-text{
+    padding: 0 30px; 
+    max-width: 910px;
+    p{
+      color: lighten($text-gray, 20%);
+    }
+  }
+
+}
+.about-heading{
+  font-size: 70px;
+  margin: 80px 0 50px 0;
 }
