@@ -17,4 +17,4 @@ $(function() {
   });
 });
 
-$('#lock').css("display", "none");
+// $('#lock').css("display", "none");

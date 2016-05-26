@@ -4,11 +4,15 @@
   box-sizing: border-box;
 }
 
+html {
+  height: 100%;
+}
+
 body {
   background-image: url(../images/numbers.svg);
   background-repeat: no-repeat;
   background-size: 27px;
-  background-position-y: 230px;
+  background-position: right 4px top 235px;
   direction: rtl;
   font-family: 'Open Sans Hebrew', 'Inconsolata', 'Open Sans', sans-serif;
   font-weight: 400;
@@ -18,6 +22,19 @@ body {
   position: relative;
   height: 100%;
 }
+
+footer {
+  text-align: left;
+  font-family: "Inconsolata", sans-serif;
+  background-color: darken($brand-dark, 5%);
+  // line-height: 40px !important;
+  padding: 15px 0;
+  .copyright {
+    color: $text-gray;
+    // line-height: 100px;
+  }
+}
+
 
 ul,
 ol {

@@ -8,3 +8,35 @@
 .wrapper {
   width: 100%;
 }
+
+body {
+  .center-container {
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+main {
+  min-height: 100%;
+  margin-bottom: -80px;
+  &:after {
+    content: "";
+    display: block;
+    height: 80px;
+  }
+}
+
+.footer-container {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+}
+
+footer {
+  margin-top: 80px;
+  height: 80px;
+}
