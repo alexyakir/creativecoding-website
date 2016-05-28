@@ -21,6 +21,9 @@ body {
   background-color: $brand-dark;
   position: relative;
   height: 100%;
+  @media (max-width: 641px) {
+    background-image: none;
+  }
 }
 
 footer {
@@ -34,7 +37,6 @@ footer {
     // line-height: 100px;
   }
 }
-
 
 ul,
 ol {
