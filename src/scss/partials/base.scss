@@ -130,8 +130,9 @@
      position: absolute;
 
     transform: translateX(-50%);
-      white-space: nowrap;
-      bottom: -30px;
+      width: 100%;
+      padding: 0px 30px;
+      bottom: -45px;
       color: darken($text-gray, 20%);
     }
   @extend .hover-scale-box;
