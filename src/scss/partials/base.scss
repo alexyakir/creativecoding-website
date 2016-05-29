@@ -71,6 +71,9 @@
     span {
       color: $brand-yellow;
     }
+    &:hover{
+      color: $brand-purple;
+    }
   }
 }
 
@@ -117,10 +120,24 @@
 }
 
 .class-metadata {
+  position: relative;
+  small{
+    &:before{
+      content: "* ";
+      color: $brand-yellow;
+    }
+    left: 50%;
+     position: absolute;
+
+    transform: translateX(-50%);
+      white-space: nowrap;
+      bottom: -30px;
+      color: darken($text-gray, 20%);
+    }
   @extend .hover-scale-box;
   max-width: 340px;
   border-radius: $border-radius-base;
-  overflow: hidden;
+  // overflow: hidden;
   padding: 40px 40px 0px 40px;
   margin: auto 40px;
   background: linear-gradient(45deg, lighten($brand-dark, 2%) 0%, lighten($brand-dark, 6%) 100%);
@@ -151,6 +168,7 @@
       color: $text-gray;
       font-weight: 200;
     }
+
   }
   .submit {
     background-color: $brand-yellow;
@@ -158,6 +176,8 @@
     margin: 50px -40px 0;
     text-align: center;
     padding: 15px;
+    border-bottom-left-radius: $border-radius-base;
+    border-bottom-right-radius: $border-radius-base;
     color: $brand-dark;
     font-weight: 600;
     &:hover {
@@ -294,7 +314,7 @@
   .topic {
     display: flex;
     // align-items: center;
-    padding: 30px 0px;
+    padding: 30px 20px;
     border-top: 1px solid lighten($brand-dark, 10%);
     @media (max-width: 820px) {
       flex-direction: column;
@@ -305,15 +325,23 @@
     .topic-header,
     .topic-time,
     .topic-desc {
-      margin-right: 30px;
+      // margin-right: 30px;
+      padding: 15px;
+    }
+    .topic-desc{
+      width: 100%;
+      flex: 3;
     }
     .topic-header {
-      width: 30%;
-      margin-bottom: 15px;
+      // width: 30%;
+      // margin-bottom: 15px;
+      flex: 1;
     }
     .topic-time {
-      width: 20%;
-      margin-bottom: 15px;
+      // width: 20%;
+      flex: 0.8;
+
+      // margin-bottom: 15px;
     }
   }
 }
