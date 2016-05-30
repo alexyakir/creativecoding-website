@@ -473,3 +473,13 @@
   padding: 0px 30px;
   text-align: center;
 }
+
+.fb-like{
+  position: absolute !important;
+  top: 18px;
+  left: 10px;
+  @media (max-width: 893px) {
+    display: none !important;
+    
+  }
+}
