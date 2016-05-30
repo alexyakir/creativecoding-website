@@ -2,3 +2,5 @@ User-Agent: *
 Disallow: 
 Disallow: /thanks-contact.html
 Disallow: /thanks-signup.html
+Disallow: /thanks-contact
+Disallow: /thanks-signup
